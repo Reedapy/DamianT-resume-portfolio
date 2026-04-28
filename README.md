@@ -1,20 +1,20 @@
-# Damian Trajkovski — Portfolio
+# Damian Trajkovski - Portfolio
 
 An editorial-style personal portfolio website built with **Next.js 14**, **GSAP**, and **Tailwind CSS**.  
-Inspired by award-winning design studios — rich typography, scroll-driven animations, and a magazine-cover aesthetic.
+Inspired by award-winning design studios - rich typography, scroll-driven animations, and a magazine-cover aesthetic.
 
 ---
 
 ## ✨ Features
 
-- **Editorial design** — Cormorant Garamond display type + Syne UI font, warm cream / sienna palette
-- **GSAP ScrollTrigger** — cinematic section reveals driven by scroll position
-- **Lenis smooth scroll** — buttery smooth scrolling, synced with GSAP's RAF ticker
-- **Custom cursor** — dot + ring follower with hover expansion (desktop only)
-- **Scroll progress bar** — thin sienna line that fills as you scroll
-- **Marquee ticker** — looping skill carousel
-- **Responsive** — fully mobile-first, hamburger nav on small screens
-- **Grain overlay** — subtle SVG noise texture for paper-like depth
+- **Editorial design** - Cormorant Garamond display type + Syne UI font, warm cream / sienna palette
+- **GSAP ScrollTrigger** - cinematic section reveals driven by scroll position
+- **Lenis smooth scroll** - buttery smooth scrolling, synced with GSAP's RAF ticker
+- **Custom cursor** - dot + ring follower with hover expansion (desktop only)
+- **Scroll progress bar** - thin sienna line that fills as you scroll
+- **Marquee ticker** - looping skill carousel
+- **Responsive** - fully mobile-first, hamburger nav on small screens
+- **Grain overlay** - subtle SVG noise texture for paper-like depth
 - **Zero-config Vercel deployment**
 
 ---
@@ -88,7 +88,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
 ## 🚢 Deployment
 
-### Vercel (Recommended — zero config)
+### Vercel (Recommended - zero config)
 
 1. Push this repo to GitHub
 2. Go to [vercel.com](https://vercel.com) → New Project
@@ -213,4 +213,4 @@ Defined as CSS custom properties in `globals.css` and Tailwind theme:
 
 ## 📄 License
 
-MIT — feel free to use as a base for your own portfolio.
+MIT - feel free to use as a base for your own portfolio.
