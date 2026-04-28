@@ -12,7 +12,7 @@ export const personal: Personal = {
   linkedin: 'https://www.linkedin.com/in/damian-trajkovski-9b8671234/',
   githubWork: 'https://github.com/damiantrajkovski',
   githubPersonal: 'https://github.com/Reedapy',
-  bio: `Graduate software engineer with a Master's from the University of Melbourne. I build robust, scalable systems - from real-time BLE medical devices to cloud-native platforms - with a focus on precision, performance and purposeful design.`,
+  bio: `Graduate software engineer with a Master's from the University of Melbourne. Experience ranging from real-time BLE medical devices to cloud-native platforms, with a focus on precision, performance and purposeful design.`,
 }
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
@@ -50,7 +50,7 @@ export const projects: Project[] = [
       'Fully responsive, accessible and < 100 KB initial JS bundle',
     ],
     featured: true,
-    link: 'https://github.com/damiantrajkovski',
+    link: 'https://github.com/Reedapy/DamianT-resume-portfolio',
   },
   {
     id: '03',
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     role: 'Engineer',
     stack: ['TBD'],
     description:
-      'Replace this entry in src/lib/data.ts with your next impressive project once it\'s underway.',
+      'Work in progress...',
     highlights: [],
     featured: false,
   },

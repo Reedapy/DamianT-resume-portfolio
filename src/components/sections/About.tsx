@@ -72,9 +72,8 @@ export default function About() {
       {/* ── Pull quote ── */}
       <blockquote ref={quoteRef} className="mb-20 md:mb-28">
         <p className="font-cormorant text-[clamp(2.2rem,5vw,5rem)] font-light leading-[1.1] max-w-5xl text-[var(--ink)]">
-          "Building software that bridges{' '}
-          <em className="text-[var(--sienna)]">complexity</em>{' '}
-          and clarity."
+          "Learning, building, {' '}
+          <em className="text-[var(--sienna)]">improving.</em>{' '}"
         </p>
       </blockquote>
 
