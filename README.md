@@ -1,7 +1,7 @@
 # Damian Trajkovski - Portfolio
 
-An editorial-style personal portfolio website built with **Next.js 14**, **GSAP**, and **Tailwind CSS**.  
-Inspired by award-winning design studios - rich typography, scroll-driven animations, and a magazine-cover aesthetic.
+An editorial-style personal portfolio website built with **Next.js 14**, **GSAP** and **Tailwind CSS**.  
+Inspired by award-winning design studios - rich typography, scroll-driven animations and a magazine-cover aesthetic.
 
 ---
 
@@ -51,7 +51,7 @@ Edit that file to update:
 | `projects` | Each project: title, client, period, role, stack, description, highlights, link |
 | `skills` | Categorised skill lists (Frontend, Backend, Mobile, Cloud, Tools) |
 | `allSkills` | Flat list for the marquee ticker |
-| `education` | Degrees, institutions, and periods |
+| `education` | Degrees, institutions and periods |
 
 ---
 
