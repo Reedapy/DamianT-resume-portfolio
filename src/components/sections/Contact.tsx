@@ -192,7 +192,8 @@ export default function Contact() {
             <div className="divide-y divide-[var(--light-gray)]">
               {[
                 { label: 'LinkedIn', href: personal.linkedin },
-                { label: 'GitHub',   href: personal.github   },
+                { label: 'GitHub (Work/Uni)', href: personal.githubWork },
+                { label: 'GitHub (Personal)', href: personal.githubPersonal },
               ].map(({ label, href }) => (
                 <a
                   key={label}

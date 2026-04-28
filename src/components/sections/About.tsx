@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 export default function About() {
   const sectionRef  = useRef<HTMLElement>(null)
   const headerRef   = useRef<HTMLDivElement>(null)
-  const quoteRef    = useRef<HTMLElement>(null)
+  const quoteRef    = useRef<HTMLQuoteElement>(null)
   const bioRef      = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

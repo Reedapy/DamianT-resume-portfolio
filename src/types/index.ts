@@ -24,7 +24,8 @@ export interface Personal {
   email: string
   phone: string
   linkedin: string
-  github: string
+  githubWork: string
+  githubPersonal: string
   bio: string
 }
 
