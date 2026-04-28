@@ -88,11 +88,8 @@ export default function About() {
             {personal.bio}
           </p>
           <p className="font-syne text-sm text-[var(--warm-gray)] leading-relaxed mb-7">
-            My approach centres on systems thinking - understanding how backend logic,
-            user experience and business goals interconnect. Whether optimising Docker
-            workflows, designing accessible RESTful APIs or delivering real-time BLE
-            data pipelines, I bring methodical precision and a commitment to continuous
-            improvement.
+            Recently, I’ve worked on a Bluetooth‑connected ECG mobile platform, developing features across React Native, Kotlin and Swift
+            and learning how real‑time data, encryption and user experience come together in practice.
           </p>
           <p className="font-syne text-sm text-[var(--warm-gray)] leading-relaxed">
             Outside of engineering I coached Coding, LEGO Robotics, Chess and soccer - experiences that

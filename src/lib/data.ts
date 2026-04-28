@@ -12,7 +12,7 @@ export const personal: Personal = {
   linkedin: 'https://www.linkedin.com/in/damian-trajkovski-9b8671234/',
   githubWork: 'https://github.com/damiantrajkovski',
   githubPersonal: 'https://github.com/Reedapy',
-  bio: `Graduate software engineer with a Master's from the University of Melbourne. Experience ranging from real-time BLE medical devices to cloud-native platforms, with a focus on precision, performance and purposeful design.`,
+  bio: 'I’m a software engineer currently completing my Master of Software Engineering at the University of Melbourne. I enjoy building clean, reliable systems and working across frontend, backend, mobile and cloud technologies. (full-stack)',
 }
 
 // ─── Projects ─────────────────────────────────────────────────────────────────

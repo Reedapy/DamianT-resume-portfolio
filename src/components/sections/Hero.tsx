@@ -148,8 +148,7 @@ export default function Hero() {
         ref={descRef}
         className="font-cormorant text-xl md:text-2xl font-light text-[var(--warm-gray)] max-w-2xl leading-relaxed"
       >
-        Building robust, scalable systems — from Bluetooth-connected medical
-        devices to cloud-native platforms — with precision and purposeful design.
+        Software engineer graduate focused on building reliable, user‑friendly systems.
       </p>
 
       {/* Scroll indicator */}
