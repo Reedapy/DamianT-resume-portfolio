@@ -1,4 +1,4 @@
-# Damian Trajkovski — Portfolio
+# Damian Trajkovski - Portfolio
 
 My personal portfolio website built with **Next.js 14**, **TypeScript**, **GSAP**, and **Tailwind CSS**.  
 Designed to showcase my projects, experience, and background as a software engineer.
