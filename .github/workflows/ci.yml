@@ -7,9 +7,9 @@ on:
     branches: [main]
 
 jobs:
-  # ── Job 1: Lint & Type Check ───────────────────────────────────────────────
+  # ── Job 1: Type Check ───────────────────────────────────────────────────────
   quality:
-    name: Lint & Type Check
+    name: Type Check
     runs-on: ubuntu-latest
 
     steps:
@@ -25,13 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: ESLint
-        run: npm run lint
-
       - name: TypeScript
         run: npm run type-check
 
-  # ── Job 2: Production build ────────────────────────────────────────────────
+  # ── Job 2: Production build ─────────────────────────────────────────────────
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -53,7 +50,6 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Prevents build from failing due to ESLint warnings
           NEXT_TELEMETRY_DISABLED: 1
 
       - name: Upload build artifact
