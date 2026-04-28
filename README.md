@@ -29,8 +29,8 @@ Inspired by award-winning design studios — rich typography, scroll-driven anim
 ### Install & Run
 
 ```bash
-git clone https://github.com/damiantrajkovski/portfolio.git
-cd portfolio
+git clone https://github.com/Reedapy/DamianT-resume-portfolio.git
+cd DamianT-resume-portfolio
 npm install
 npm run dev
 ```
