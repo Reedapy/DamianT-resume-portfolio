@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────────── */
+
+:root {
+  --cream: #F3EDE3;
+  --ink: #141410;
+  --sienna: #C84B2A;
+  --warm-gray: #8A847A;
+  --light-gray: #E6E0D6;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--cream);
+  color: var(--ink);
+  /* Hide native cursor — custom cursor replaces it on desktop */
+  cursor: none;
+  scroll-behavior: auto; /* Lenis handles smooth scrolling */
+}
+
+@media (pointer: coarse) {
+  html {
+    cursor: auto; /* Restore on touch devices */
+  }
+}
+
+body {
+  font-family: var(--font-syne), system-ui, sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Custom Cursor ──────────────────────────────────────────────────────────── */
+
+.cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: var(--sienna);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+/* Hide custom cursor on touch devices */
+@media (pointer: coarse) {
+  .cursor-dot,
+  .cursor-follower {
+    display: none;
+  }
+}
+
+/* ─── Selection ──────────────────────────────────────────────────────────────── */
+
+::selection {
+  background: var(--sienna);
+  color: var(--cream);
+}
+
+/* ─── Scroll Progress Bar ────────────────────────────────────────────────────── */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--sienna);
+  z-index: 9997;
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+/* ─── Marquee ────────────────────────────────────────────────────────────────── */
+
+@keyframes marquee-slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-slide 30s linear infinite;
+  white-space: nowrap;
+  display: inline-flex;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Editorial Divider ──────────────────────────────────────────────────────── */
+
+.editorial-line {
+  height: 1px;
+  background: var(--ink);
+  opacity: 0.12;
+  display: block;
+}
+
+/* ─── Form Inputs ────────────────────────────────────────────────────────────── */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--cream) inset;
+  -webkit-text-fill-color: var(--ink);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ─── Utility ────────────────────────────────────────────────────────────────── */
+
+/* Prevent FOUC on GSAP animated elements */
+.gsap-hidden {
+  opacity: 0;
+}
+
+/* Grain overlay for texture */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9996;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
