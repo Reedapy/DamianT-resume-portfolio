@@ -126,17 +126,32 @@ export default function Work() {
                   ))}
                 </div>
 
-                {/* Link */}
-                {project.link && project.id !== '03' && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-syne text-[11px] tracking-[0.2em] uppercase text-[var(--ink)] hover:text-[var(--sienna)] transition-colors mt-4"
-                  >
-                    View on GitHub
-                    <span className="text-base leading-none">↗</span>
-                  </a>
+                {/* Links */}
+                {(project.link || project.siteLink) && (
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4">
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 font-syne text-[11px] tracking-[0.2em] uppercase text-[var(--ink)] hover:text-[var(--sienna)] transition-colors"
+                      >
+                        View on GitHub
+                        <span className="text-base leading-none">↗</span>
+                      </a>
+                    )}
+                    {project.siteLink && (
+                      <a
+                        href={project.siteLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 font-syne text-[11px] tracking-[0.2em] uppercase text-[var(--ink)] hover:text-[var(--sienna)] transition-colors"
+                      >
+                        View live site
+                        <span className="text-base leading-none">↗</span>
+                      </a>
+                    )}
+                  </div>
                 )}
               </div>
 

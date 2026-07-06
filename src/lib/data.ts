@@ -78,6 +78,7 @@ export const projects: Project[] = [
       'Designed Supabase-backed vault storage with user-specific Row Level Security policies',
     ],
     featured: true,
+    link: 'https://github.com/Reedapy/Vaultless',
   },
   {
     id: '04',
@@ -95,6 +96,8 @@ export const projects: Project[] = [
       'Created as a practical full-stack or frontend project to strengthen product-style development skills',
     ],
     featured: false,
+    link: 'https://github.com/Reedapy/worldcup2026',
+    siteLink: 'https://worldcup2026-liart-eight.vercel.app/',
   },
 ]
 

@@ -9,6 +9,7 @@ export interface Project {
   highlights: string[]
   featured: boolean
   link?: string
+  siteLink?: string
 }
 
 export interface Education {
