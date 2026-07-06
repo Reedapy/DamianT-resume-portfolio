@@ -109,18 +109,18 @@ export default function Hero() {
       </div>
 
       {/* ── Headline — overflow hidden clips the lines for a slide-up reveal ── */}
-      <div className="overflow-hidden leading-none mb-0">
+      <div className="overflow-hidden leading-none">
         <div
           ref={name1Ref}
-          className="font-cormorant font-light text-[clamp(4.5rem,13.5vw,14.5rem)] leading-[0.88] tracking-tight"
+          className="font-cormorant font-light text-[clamp(4.5rem,13.5vw,14.5rem)] leading-[0.92] tracking-tight"
         >
           Damian
         </div>
       </div>
-      <div className="overflow-hidden leading-none">
+      <div className="overflow-hidden leading-none text-[clamp(4.5rem,13.5vw,14.5rem)] pb-[0.14em]">
         <div
           ref={name2Ref}
-          className="font-cormorant font-light text-[clamp(4.5rem,13.5vw,14.5rem)] leading-[0.88] tracking-tight"
+          className="font-cormorant font-light leading-[0.92] tracking-tight"
         >
           Trajkovski
         </div>
@@ -129,7 +129,7 @@ export default function Hero() {
       {/* Subtitle row */}
       <div
         ref={subtitleRef}
-        className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 mt-7 mb-6"
+        className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 mt-10 md:mt-12 mb-6"
       >
         <span className="font-syne text-xs sm:text-sm tracking-[0.18em] uppercase text-[var(--sienna)] font-medium">
           Software Engineer
