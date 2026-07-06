@@ -8,7 +8,7 @@ import Nav from '@/components/navigation/Nav'
 
 // ─── Fonts ────────────────────────────────────────────────────────────────────
 // Cormorant Garamond: elegant editorial display serif
-// Syne: geometric sans for UI labels, body, and navigation
+// Syne: geometric sans for UI labels, body and navigation
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -30,7 +30,7 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: 'Damian Trajkovski — Software Engineer',
   description:
-    'Graduate software engineer specialising in mobile development, cloud systems, and real-time data workflows. Based in Melbourne, VIC.',
+    'Graduate software engineer specialising in mobile development, with experience across web applications, cloud-integrated systems and real-time data workflows. Based in Melbourne, VIC.',
   keywords: [
     'Damian Trajkovski',
     'Software Engineer',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Damian Trajkovski — Software Engineer',
     description:
-      'Graduate software engineer specialising in mobile development, cloud systems, and real-time data workflows.',
+      'Graduate software engineer specialising in mobile development, cloud systems and real-time data workflows.',
     type: 'website',
     locale: 'en_AU',
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Damian Trajkovski — Software Engineer',
     description:
-      'Graduate software engineer specialising in mobile development, cloud systems, and real-time data workflows.',
+      'Graduate software engineer specialising in mobile development, cloud systems and real-time data workflows.',
   },
   robots: {
     index: true,
