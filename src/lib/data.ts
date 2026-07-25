@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'ECG Mobile Platform',
     client: 'Biosignals Diagnostics',
     period: '2025 – Present',
-    role: 'Mobile Application Developer',
+    role: 'Software Engineer',
     stack: ['React Native', 'Kotlin & Swift', 'BLE', 'REST API', 'Typescript'],
     description:
       'Cross-platform ECG app integrating Bluetooth Low Energy for real-time heart monitoring with encrypted medical data exchange. Built login, recording, task management and secure upload modules end-to-end.',
